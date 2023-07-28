@@ -8,5 +8,21 @@
     <script src="./index.js" defer></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" />
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" />
+      <label for="pages">Pages</label>
+      <input type="text" id="pages" name="pages" />
+      <label for="read">Read</label>
+      <select name="read" id="read">
+        <option value="true">Yes</option>
+        <option value="false">No</option>
+      </select>
+      <button type="button" id="addBook">Add Book</button>
+    </form>
+    <div id="bookshelf"></div>
+  </body>
 </html>
