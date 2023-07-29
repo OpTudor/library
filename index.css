@@ -1,0 +1,103 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Reset*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0eef1;
+}
+#modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+form {
+  display: inherit;
+  flex-direction: column;
+  gap: 8px;
+  background-color: antiquewhite;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+#bookshelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  grid-template-rows: repeat(auto-fit, minmax(100px, 300px));
+  gap: 1rem;
+  padding-left: 300px;
+  padding-right: 300px;
+}
+#header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1rem 1rem 10rem;
+}
+
+#add {
+  border: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#addBook:hover,
+#add:hover {
+  filter: brightness(90%);
+}
+
+.cover {
+  background-color: beige;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#addBook {
+  border: 0;
+  width: 75px;
+  align-self: center;
+  margin-top: 16px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  background-color: inherit;
+}

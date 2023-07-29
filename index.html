@@ -9,20 +9,28 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" />
-      <label for="author">Author</label>
-      <input type="text" id="author" name="author" />
-      <label for="pages">Pages</label>
-      <input type="text" id="pages" name="pages" />
-      <label for="read">Read</label>
-      <select name="read" id="read">
-        <option value="true">Yes</option>
-        <option value="false">No</option>
-      </select>
-      <button type="button" id="addBook">Add Book</button>
-    </form>
+    <div id="modal">
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" />
+        <label for="author">Author</label>
+        <input type="text" id="author" name="author" />
+        <label for="pages">Pages</label>
+        <input type="text" id="pages" name="pages" />
+        <label for="read">Read</label>
+        <select name="read" id="read">
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <button type="button" id="addBook">Submit</button>
+      </form>
+    </div>
+    <div id="header">
+      <h1>Library</h1>
+    </div>
+    <div id="content">
+      <button id="add">+Add Book</button>
+    </div>
     <div id="bookshelf"></div>
   </body>
 </html>
